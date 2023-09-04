@@ -1,3 +1,19 @@
+:root {
+  --primary-background: #1a1a1a; /* Dark Grayish-Black */
+  --secondary-background: #2b2b2b; /* Slightly Lighter Gray */
+  --text-primary: #ffffff; /* White Text */
+  --text-secondary: #cccccc; /* Light Gray Text */
+  
+  --pastel-blue: #9dc7e2;
+  --pastel-red: #f0988b;
+  --pastel-green: #b4e2a6;
+  --pastel-orange: #ffcc99;
+  --pastel-purple: #d5a9f3;
+  --pastel-lime: #c0f091;
+}
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +27,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.saved{
+  --blue: #3498db; /* Vibrant Blue */
+  --green: #2ecc71; /* Fresh Green */
+  --red: #e74c3c; /* Alert Red */
+  --orange: #e67e22; /* Warm Orange */
+  --yellow: #f1c40f; /* Sunshine Yellow */
+  --turquoise: #1abc9c; /* Bright Turquoise */
+  --pink: #e91e63; /* Lovely Pink */
+  --lime: #27ae60; /* Lively Lime */
+  --violet: #8e44ad; /* Dark Violet */
+  --raspberry: #c0392b; /* Raspberry */
+}
+
+
