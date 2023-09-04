@@ -1,8 +1,17 @@
 const Header = ()=>{
     return(
-        <>
-        HEADER
-        </>
+        <div id="header">
+            <div id="header-logo">
+                LOGO
+            </div>            
+            <div id="header-searcher">
+                O
+                SEARCH
+            </div>
+            <div id="header-user">
+                USER
+            </div>
+        </div>
     )
 }
 

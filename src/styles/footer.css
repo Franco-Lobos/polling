@@ -1,0 +1,7 @@
+#footer{
+    position: absolute;
+    bottom: 0;
+    background-color: var(--secondary-background);
+    width: 100vw;
+    z-index: 1;
+}

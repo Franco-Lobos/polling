@@ -12,6 +12,14 @@
   --pastel-lime: #c0f091;
 }
 
+*{
+  -webkit-transition: inherit;
+  transition: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  color: #dddddd;
+}
+
 
 
 body {
@@ -29,17 +37,8 @@ code {
 }
 
 
-.saved{
-  --blue: #3498db; /* Vibrant Blue */
-  --green: #2ecc71; /* Fresh Green */
-  --red: #e74c3c; /* Alert Red */
-  --orange: #e67e22; /* Warm Orange */
-  --yellow: #f1c40f; /* Sunshine Yellow */
-  --turquoise: #1abc9c; /* Bright Turquoise */
-  --pink: #e91e63; /* Lovely Pink */
-  --lime: #27ae60; /* Lively Lime */
-  --violet: #8e44ad; /* Dark Violet */
-  --raspberry: #c0392b; /* Raspberry */
-}
-
-
+@import url(./styles/header.css);
+@import url(./styles/body.css);
+@import url(./styles/footer.css);
+@import url(./styles/sidebar.css);
+@import url(./styles/main.css);
