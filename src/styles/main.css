@@ -2,4 +2,12 @@
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.page{
+    background-color: var(--secondary-background);
+    height: 100%;
+    padding: 5vw;
 }

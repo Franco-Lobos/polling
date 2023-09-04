@@ -1,15 +1,26 @@
 :root {
-  --primary-background: #1a1a1a; /* Dark Grayish-Black */
-  --secondary-background: #2b2b2b; /* Slightly Lighter Gray */
+  --primary-background: #030f1e; /* Dark Grayish-Black */
+  --secondary-background: #041722; /* Slightly Lighter Gray */
+  --terciary-background: #05202b; /* Slightly Lighter Gray */
   --text-primary: #ffffff; /* White Text */
   --text-secondary: #cccccc; /* Light Gray Text */
   
-  --pastel-blue: #9dc7e2;
-  --pastel-red: #f0988b;
-  --pastel-green: #b4e2a6;
-  --pastel-orange: #ffcc99;
-  --pastel-purple: #d5a9f3;
-  --pastel-lime: #c0f091;
+  --pastel-blue: #70a8d5;
+  --pastel-red: #e26a60;
+  --pastel-green: #90d288;
+  --pastel-orange: #ffa764;
+  --pastel-purple: #bf97e6;
+  --pastel-lime: #a3e06b;
+  
+
+  --tr: 0.4s all ease-in-out;
+  --bx-sh: 0 0 0.2rem 0rem var(--text-secondary);
+}
+
+
+path:hover,
+polygon:hover{
+  filter: brightness(0.6);
 }
 
 *{

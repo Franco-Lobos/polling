@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import SideBar from "./SideBar";
-import Home from "../pages/Home";
+import SideBar from "./SideBar/SideBar";
+import Home from "../pages/Home/Home";
 
 import { ScrollToTop } from "../../library";
 
@@ -13,14 +13,14 @@ const Main = ()=>{
         <BrowserRouter>
             <ScrollToTop/>
             <div id="main">
-                <Header/>
+                <SideBar/>
                 <div id="body">
-                    <SideBar/>
+                    <Header/>
                     <Routes>
                         <Route path="/" element={<Home/>}/>
                     </Routes>
+                    <Footer/>
                 </div>
-                <Footer/>
             </div>
         </BrowserRouter>
     )

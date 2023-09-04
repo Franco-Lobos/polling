@@ -1,4 +1,64 @@
 #sidebar{
-    background-color: var(--secondary-background);
+    background-color: var(--terciary-background);
     height: 100%;
+    padding: 3vw;
+    /* border-right: 0.2rem solid var(--primary-background); */
+    position: relative;
+
 }
+
+.sidebar-logo{
+    transition: var(--tr);
+    width: 40%;
+    left: 0;
+    right: 0;
+    top: 2vh;
+    margin: auto;
+    position: absolute;
+    border-radius: 60%;
+    background-color: var(--primary-background);
+    padding: 1rem;
+    /* -moz-transition: var(--tr);
+    -webkit-transition: var(--tr); */
+}
+
+.icon-link{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.sidebar-options{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:4vh;
+}
+
+.icon-link{
+    background-color: var(--secondary-background);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 80%;
+}
+
+.icon-link svg{
+    width: 40%;
+}
+
+.icon-link h3{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-secondary)
+}
+

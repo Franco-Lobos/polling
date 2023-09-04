@@ -14,8 +14,24 @@ export const ThemeProvider = ({ children }) => {
         console.log('theme switched')
     },[theme])
 
+    const colors = [
+        "--primary-background",
+        "--secondary-background",
+        "--terciary-background",
+        "--text-primary",
+        "--text-secondary",
+        "--pastel-blue",
+        "--pastel-red",
+        "--pastel-green",
+        "--pastel-orange",
+        "--pastel-purple",
+        "--pastel-lime"
+      ];
+      
+
     return (
         <ThemeContext.Provider value={{
+            colors: colors,
             theme,
             toggleTheme: toggleTheme,
             lang,
