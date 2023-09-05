@@ -1,0 +1,11 @@
+.home-columns{
+    display: grid;
+    grid-template-columns: 7fr 1fr 4fr;
+}
+
+.table{
+    background-color: var(--terciary-background);
+    border-radius: 0.5rem;
+    height: 100%;
+    border-top: 1px solid var(--pastel-purple);
+}

@@ -1,4 +1,4 @@
-const Home = ()=>{
+const Profile = ()=>{
 
     return (
         <div className="page home-columns">
@@ -11,4 +11,4 @@ const Home = ()=>{
     )
 }
 
-export default Home;
+export default Profile;

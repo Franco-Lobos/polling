@@ -1,37 +1,41 @@
 #header{
     display: grid;
-    grid-template-columns: 6fr 6fr;
-    width: 100%;
+    grid-template-columns: 3.5fr 4.5fr 4fr;
+    /* width: 100%; */
     color: var(--text-primary);
-    padding: 1rem;
+    padding: 5vh 4vw;
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 1.3rem;
     background-color: var(--primary-background);
 }
 
 #header svg{
     font-size: 2rem;
-    fill: var(--pastel-blue)  !important;
+    fill: var(--text-secondary)  !important;
 }
 
 
 #header-searcher input{
-    box-shadow: inset var(--bx-sh);
+    /* box-shadow: inset var(--bx-sh); */
     padding: 1rem;
     border-radius: 0.5rem;
     border: none;
     color: var(--text-secondary);
     font-weight: 800;
+    height: 100%;  
+    font-size: 1.5rem; 
     width: 100%;
     background-color: var(--secondary-background);
-
 }
+
 
 #header-user{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     gap: 3vw;
+    background-color: var(--secondary-background);
+    border-radius: 0.5rem;
+    padding: 0;
 }
 
 #user-profle{
@@ -43,7 +47,12 @@
 
 #user-money{
     padding: 0.5rem 2rem;
-    border-radius: 0.5rem;
-    color: var(--pastel-blue);
+    border-radius: 0.5rem 0 0 0.5rem;
+    background-color: var(--primary-background);
+    color: var(--pastel-purple);
+    border-left: 2px solid var(--pastel-purple);
+    height: 100%;
+    display: flex;
+    align-items: center;
     /* background-color: var(--secondary-background); */
 }

@@ -1,7 +1,10 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import SideBar from "./SideBar/SideBar";
+
 import Home from "../pages/Home/Home";
+import Profile from "../pages/Profile/Profile";
+import Config from "../pages/Config/Config";
 
 import { ScrollToTop } from "../../library";
 
@@ -18,6 +21,8 @@ const Main = ()=>{
                     <Header/>
                     <Routes>
                         <Route path="/" element={<Home/>}/>
+                        <Route path="/profile" element={<Profile/>}/>
+                        <Route path="/settings" element={<Config/>}/>
                     </Routes>
                     <Footer/>
                 </div>

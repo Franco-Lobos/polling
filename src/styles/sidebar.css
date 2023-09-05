@@ -1,25 +1,27 @@
 #sidebar{
-    background-color: var(--terciary-background);
+    background-color: var(--secondary-background);
     height: 100%;
-    padding: 3vw;
+    padding: 3vh 3vw;
     /* border-right: 0.2rem solid var(--primary-background); */
     position: relative;
+}
 
+.sidebar-logo-wraper{
+    width: 90%;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    border-radius: 1rem 0% 0% 1rem;
+    background-color: var(--primary-background);
+    display: flex;
+    justify-content: center;
 }
 
 .sidebar-logo{
     transition: var(--tr);
-    width: 40%;
-    left: 0;
-    right: 0;
-    top: 2vh;
-    margin: auto;
-    position: absolute;
-    border-radius: 60%;
-    background-color: var(--primary-background);
-    padding: 1rem;
-    /* -moz-transition: var(--tr);
-    -webkit-transition: var(--tr); */
+    padding: 2vh 0;
+    height: 10vh;
+    margin-right: 5%;
 }
 
 .icon-link{
@@ -30,6 +32,15 @@
     flex-direction: column;
     font-size: 1rem;
     font-weight: 600;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 80%;
+    transition: var(--tr);
+}
+.sidebar-options a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sidebar-options{
@@ -45,11 +56,8 @@
     gap:4vh;
 }
 
-.icon-link{
-    background-color: var(--secondary-background);
-    padding: 1rem;
-    border-radius: 1rem;
-    width: 80%;
+.icon-link.active{
+    background-color: var(--primary-background);
 }
 
 .icon-link svg{
