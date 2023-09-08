@@ -4,6 +4,7 @@
   --terciary-background: #05202b; /* Slightly Lighter Gray */
   --text-primary: #ffffff; /* White Text */
   --text-secondary: #cccccc; /* Light Gray Text */
+  --text-terciary: #999999; /* Light Gray Text */
   
   --pastel-blue: #70a8d5;
   --pastel-red: #e26a60;
@@ -15,6 +16,8 @@
 
   --tr: 0.4s all ease-in-out;
   --bx-sh: 0 0 0.2rem 0rem var(--text-secondary);
+  --border: 1px solid var(--pastel-blue);
+  --line: 0.2rem solid var(--primary-background)
 }
 
 
@@ -29,9 +32,14 @@ polygon:hover{
   box-sizing: border-box;
   margin: 0;
   color: #dddddd;
+  transition: var(--tr);
 }
 
 
+html{
+  font-size: 16px;
+  
+}
 
 body {
   margin: 0;
@@ -42,10 +50,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 
 @import url(./styles/header.css);
@@ -54,3 +58,4 @@ code {
 @import url(./styles/sidebar.css);
 @import url(./styles/main.css);
 @import url(./styles/home.css);
+@import url(./styles/results.css);

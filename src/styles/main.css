@@ -10,6 +10,7 @@
     background-color: var(--primary-background);
     height: 100%;
     padding: 2vw 4vw;
-    font-size: 1.3rem;
-
+    font-size: 1.1rem;
+    max-height: 85vh;
+    overflow: scroll;
 }

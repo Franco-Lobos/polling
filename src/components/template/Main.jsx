@@ -9,6 +9,7 @@ import Config from "../pages/Config/Config";
 import { ScrollToTop } from "../../library";
 
 import {BrowserRouter, Route, Routes } from 'react-router-dom';
+import Results from "../pages/Results/Results";
 
 
 const Main = ()=>{
@@ -22,9 +23,10 @@ const Main = ()=>{
                     <Routes>
                         <Route path="/" element={<Home/>}/>
                         <Route path="/profile" element={<Profile/>}/>
+                        <Route path="/results" element={<Results/>}/>
                         <Route path="/settings" element={<Config/>}/>
                     </Routes>
-                    <Footer/>
+                    {/* <Footer/> */}
                 </div>
             </div>
         </BrowserRouter>

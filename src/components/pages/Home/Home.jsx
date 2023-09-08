@@ -1,12 +1,17 @@
+import { PoolsConst } from "../../constants/PoolsConst";
+import PoolTable from './PoolTable';
+
 const Home = ()=>{
+
+
 
     return (
         <div className="page home-columns">
-            <div className="first-column table">
-            </div>            
-            <div></div>
-            <div className="second-column table">
-            </div>
+            {
+                PoolsConst.pools.map((pool, indx)=>
+                    <PoolTable pool={pool} key={indx} indx={indx} />
+                )  
+            }     
         </div>
     )
 }

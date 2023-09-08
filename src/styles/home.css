@@ -1,11 +1,72 @@
 .home-columns{
     display: grid;
-    grid-template-columns: 7fr 1fr 4fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
 }
 
-.table{
-    background-color: var(--terciary-background);
+.home-columns .body{
+    max-height: 25vh;
+    overflow: scroll;
+    padding: 1rem 0;
+    border-top: var(--line);
+    display: flex;
+    gap: 2vh;
+    position:relative /*DO NOT ERASE*/
+}
+
+.home-columns .body p{
+    font-size: 0.9rem;
+}
+.home-columns  .table{
+    padding-bottom: 4rem;
+}
+
+.meta.footered{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-weight: 700;
+}
+
+
+.body .question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    height: 100%;
-    border-top: 1px solid var(--pastel-purple);
+    cursor: pointer;
+}
+
+.body .question p{
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.body .question span{
+    color: var(--text-secondary);
+    font-style: oblique;
+    font-size: 1.4rem;
+    opacity: 0.6;
+    font-weight: 700;
+    padding: 0 0.6rem;
+}
+
+.question.active span{
+    color: var(--pastel-blue) !important; 
+}
+
+.question.active{
+    background-color: var(--primary-background);
+}
+
+
+.question.blured p,
+.question.blured span{
+    opacity: 0.5;
+}
+
+.question.blured svg{
+    fill: var(--pastel-blue);
 }
