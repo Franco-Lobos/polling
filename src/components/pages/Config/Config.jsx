@@ -1,13 +1,10 @@
 const Config = ()=>{
 
     return (
-        <div className="page home-columns">
-            <div className="first-column table">
+        <div className="page">
+            <div className="table" style={{height:'95%'}}>
             </div>            
-            <div></div>
-            <div className="second-column table">
-            </div>
-        </div>
+        </div>      
     )
 }
 

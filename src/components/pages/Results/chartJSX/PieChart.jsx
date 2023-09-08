@@ -36,15 +36,14 @@ const PieChart = ({dataInput, totalVotes})=> {
                     pieValue={(data) => data.votes}
                     outerRadius={half}
                     innerRadius={({ data }) => {
-                    const size = active && data.name === active.name ? 68 : 50;
-                    return half - size;
+                        const size = active && data.name === active.name ? 68 : 50;
+                        return half - size;
                     }}
                     cornerRadius={10}
                     padAngle={0.04}
                 >
                     {(pie) => {
                     return pie.arcs.map((arc) => {
-                        const [centroidX, centroidY] = pie.path.centroid(arc);
                         return (
                         <g
                             key={arc.data.name}
@@ -52,22 +51,8 @@ const PieChart = ({dataInput, totalVotes})=> {
                             onMouseLeave={() => setActive(null)}
                             style={{ cursor: "pointer" }}
                         >
-                            <path d={pie.path(arc)}
-                                fill={arc.data?.color}
-                                >
-
+                            <path d={pie.path(arc)} fill={arc.data?.color}>
                             </path>
-                            <Text
-                            fill="white"
-                            x={centroidX}
-                            y={centroidY}
-                            dy=".33em"
-                            fontSize={15}
-                            textAnchor="middle"
-                            pointerEvents="none"
-                            >
-                            {arc.data.symbol}
-                            </Text>
                         </g>
                         );
                     });
@@ -82,6 +67,7 @@ const PieChart = ({dataInput, totalVotes})=> {
                     textAnchor="middle"
                     fill={active ? active.color : `var(--text-terciary)`}
                     fontSize={20}
+                    fontWeight={500}
                     dy={90}
                     width={width/3}
                 >

@@ -19,7 +19,9 @@ const PoolOption = ({option, indx, totalVotes})=>{
       };
 
     let time = 5000 // miliseconds
-    let hoverBrightness = 1 // scale 
+    const hoverBrightness = 1 // scale 
+
+    const keys = Object.keys(BreathColors);
 
     const dispatchBreathing = ()=>{
 
@@ -30,7 +32,6 @@ const PoolOption = ({option, indx, totalVotes})=>{
             bar.style.width = `${percentage}%`
         },300 + (time/50) *indx);
 
-        const keys = Object.keys(BreathColors);
         bar.style.backgroundColor =  BreathColors[keys[indx]][theme];
         // intervalRef.current = breath(bar, indx, setBreathing, time, hoverBrightness, BreathColors);
     }
@@ -50,11 +51,11 @@ const PoolOption = ({option, indx, totalVotes})=>{
             <div className="background">
                 <div className="loaded" id={`loaded-bar${indx}`}>
                 </div>
-                <div className="percentage">
+                <div className="percentage" >
                     {percentage}% - {option.votes} Votes
                 </div>
             </div>
-            <div className="text">
+            <div className="text" style={{color:BreathColors[keys[indx]][theme]}}>
                 {option.name}
             </div>
         </div>

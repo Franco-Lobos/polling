@@ -19,6 +19,12 @@ const Results = ()=>{
     const [totalQuestionVotes, setTotalQuestionVotes] = useState(0);
     const [index, setIndex] = useState(0);
 
+
+    const getProportional = (n, m) => {
+        let scaled  = m * n ;
+        return scaled%10;
+    }
+
     const calculateTotalVotes = (pool)=>{
         let returner =0;
         pool.questions.map(question=>
@@ -113,9 +119,9 @@ const Results = ()=>{
                     <h3> Round {results.order} of {pool.questions.length}</h3>
                     <h2> {results.question}</h2>
                     <div className="meta-data">
-                        <div className="meta"><BackHandIcon/> {totalVotes}</div>
-                        <div className="meta"><WatchLaterIcon/> 3 Days to go</div>
-                        <div className="meta"><PersonIcon/> {pool.creator}</div>
+                        <div className="meta"><BackHandIcon/> {totalQuestionVotes}</div>
+                        <div className="meta"><WatchLaterIcon/> {getProportional(totalQuestionVotes,totalQuestionVotes)} Days to go</div>
+                        <div className="meta"><PersonIcon/> By {pool.creator}</div>
                     </div>
                 </div>
                 :""
@@ -159,7 +165,7 @@ const Results = ()=>{
                                 )
                             }
                         </div>
-
+                        <h3>{totalVotes} total votes</h3>
                         <h2> {pool.name}</h2>
                         <div className="meta-data buttoned">
                             <div className="meta buttoned"><EditIcon/> Modify</div>

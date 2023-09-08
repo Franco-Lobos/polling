@@ -33,7 +33,7 @@ export const ColorsConst = {
         dark: "#e26a60",
     },
     '--pastel-green': {
-        light: "#7fc772",
+        light: "#6baf63",
         dark: "#90d288",
     },
     '--pastel-orange': {
@@ -60,7 +60,7 @@ export const BreathColors = {
     dark: "#e26a60",
 },
 '--pastel-green': {
-    light: "#7fc772",
+    light: "#6baf63",
     dark: "#90d288",
 },
 '--pastel-orange': {

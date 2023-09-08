@@ -21,10 +21,10 @@
 }
 
 
-path:hover,
+/* path:hover,
 polygon:hover{
   filter: brightness(0.6);
-}
+} */
 
 *{
   -webkit-transition: inherit;
@@ -59,3 +59,17 @@ body {
 @import url(./styles/main.css);
 @import url(./styles/home.css);
 @import url(./styles/results.css);
+
+
+@keyframes spawn{
+  from{
+    opacity: 0;
+    max-height: 0;
+  }
+
+  to{
+    opacity: 1;
+    max-height: 2000px;
+  }
+}
+

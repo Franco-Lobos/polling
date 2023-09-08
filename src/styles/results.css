@@ -141,6 +141,7 @@
     font-size: 0.8rem;
     font-weight: 200;
     font-style: oblique;
+    color: var(--text-primary)
 }
 
 .table .body .background .loaded{
