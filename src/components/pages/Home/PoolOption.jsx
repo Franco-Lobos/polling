@@ -30,7 +30,9 @@ const PoolOption = ({option, indx, totalVotes})=>{
             bar.style.width = `${percentage}%`
         },300 + (time/50) *indx);
 
-        intervalRef.current = breath(bar, indx, setBreathing, time, hoverBrightness, BreathColors);
+        const keys = Object.keys(BreathColors);
+        bar.style.backgroundColor =  BreathColors[keys[indx]][theme];
+        // intervalRef.current = breath(bar, indx, setBreathing, time, hoverBrightness, BreathColors);
     }
 
     useEffect(()=>{

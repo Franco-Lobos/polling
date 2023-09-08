@@ -12,6 +12,7 @@
 #header svg{
     font-size: 1.2rem;
     fill: var(--text-secondary)  !important;
+    cursor: pointer;
 }
 
 
@@ -41,7 +42,7 @@
     display: flex;
     align-items: center;
     gap: 3vw;
-    background-color: var(--secondary-background);
+    background-color: var(--primary-background);
     border-radius: 0.5rem;
     padding: 0;
     border-bottom: var(--border);
@@ -57,11 +58,24 @@
 #user-money{
     padding: 0.5rem 2rem;
     border-radius: 0.5rem 0 0 0.5rem;
-    background-color: var(--primary-background);
     color: var(--pastel-blue);
-    /* border-left: 2px solid var(--pastel-purple); */
     height: 100%;
     display: flex;
     align-items: center;
-    /* background-color: var(--secondary-background); */
+    background-color: var(--secondary-background);
+}
+
+#user-image{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    width: 5vh;
+    height: 5vh;
+   
+    border-radius: 0.5rem;
+}
+
+#user-name{
+    color:var(--text-secondary)
 }

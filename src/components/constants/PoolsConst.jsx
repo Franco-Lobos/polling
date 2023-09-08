@@ -111,7 +111,7 @@ export const PoolsConst = {
         },
         {
           question: "What's your favorite movie genre, and why does it appeal to you?",
-          order: 1,
+          order: 3,
           answers: [
             { name: "Action - Thrilling and adrenaline-pumping.", votes: getRandomVotes() },
             { name: "Comedy - Laughter is the best medicine.", votes: getRandomVotes() },
@@ -195,7 +195,7 @@ export const PoolsConst = {
       questions: [
         {
           question: "What's your favorite type of cuisine to explore while traveling?",
-          order: 3,
+          order: 1,
           answers: [
             { name: "Thai - The perfect blend of sweet, sour, and spicy.", votes: getRandomVotes() },
             { name: "Indian - The rich flavors and aromatic spices.", votes: getRandomVotes() },
@@ -204,7 +204,7 @@ export const PoolsConst = {
         },
         {
           question: "Share a memorable food experience from your travels.",
-          order: 4,
+          order: 2,
           answers: [
             { name: "Trying street food in Bangkok, Thailand.", votes: getRandomVotes() },
             { name: "Enjoying a traditional Italian feast in Rome.", votes: getRandomVotes() },
@@ -222,7 +222,7 @@ export const PoolsConst = {
       questions: [
         {
           question: "What's your all-time favorite book? What makes it special?",
-          order: 5,
+          order: 1,
           answers: [
             { name: "The Great Gatsby - A timeless exploration of the American Dream.", votes: getRandomVotes() },
             { name: "Pride and Prejudice - Classic romance and social commentary.", votes: getRandomVotes() },
@@ -231,7 +231,7 @@ export const PoolsConst = {
         },
         {
           question: "E-books or physical books? What's your preference and why?",
-          order: 6,
+          order: 2,
           answers: [
             { name: "I prefer physical books for the tactile experience.", votes: getRandomVotes() },
             { name: "E-books for the convenience of carrying a library in my pocket.", votes: getRandomVotes() },

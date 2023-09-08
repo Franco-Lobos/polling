@@ -1,22 +1,22 @@
 export const ColorsConst = {
     '--primary-background': {
-        light: "#e6f0ff",
+        light: "#e6f0ff", 
         dark: "#030f1e",
     },
     '--secondary-background': {
-        light: "#c0d8ff",
+        light: "#c0d8ff", 
         dark: "#041722",
     },
     '--terciary-background': {
-        light: "#d0e5ff",
+        light: "#c0d8ff",
         dark: "#05202b",
     },
     '--text-primary': {
-        light: "#333333",
+        light: "#222222",
         dark: "#ffffff",
     },
     '--text-secondary': {
-        light: "#666666",
+        light: "#555555",
         dark: "#cccccc",
     },
     '--text-terciary': {
@@ -25,7 +25,7 @@ export const ColorsConst = {
     },
 
     '--pastel-blue': {
-        light: "#5da5d9",
+        light: "#4c8ac5", //4c8ac5 - 5da5d9
         dark: "#70a8d5",
     },
     '--pastel-red': {
@@ -52,7 +52,7 @@ export const ColorsConst = {
 
 export const BreathColors = {
 '--pastel-blue': {
-    light: "#5da5d9",
+    light: "#4c8ac5",
     dark: "#70a8d5",
 },
 '--pastel-red': {

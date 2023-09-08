@@ -4,6 +4,11 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 
 const Header = ()=>{
+
+    const userSyle = {
+        backgroundImage: `url(${require(`../../assets/profile.png`)})`,
+    }
+
     return(
         <div id="header">    
             <div id="header-searcher">
@@ -14,9 +19,10 @@ const Header = ()=>{
                 <div id="user-money">
                     $15
                 </div>
+                <NotificationsIcon></NotificationsIcon>
+
                 <div id="user-profle">              
-                    <NotificationsIcon></NotificationsIcon>
-                    <PersonIcon></PersonIcon>
+                    <div id="user-image" style={userSyle} ></div>
                     <div id="user-name">
                         Peter
                     </div>

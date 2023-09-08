@@ -9,6 +9,8 @@ import { useEffect, useState } from "react";
 
 import { PoolsConst } from "../../constants/PoolsConst";
 
+import PieChart from "./chartJSX/PieChart";
+
 const Results = ()=>{
 
     const [results, setResults] = useState(0);
@@ -76,7 +78,12 @@ const Results = ()=>{
 
     useEffect(()=>{
         const selected= window.localStorage.getItem('selectedResult');
-        if(!selected) return;
+        
+        if(!selected) {
+            const toSave={pool: PoolsConst.pools[0].name, question: PoolsConst.pools[0].questions[0].question};
+            window.localStorage.setItem('selectedResult', JSON.stringify(toSave));
+        }
+
         const data = JSON.parse(localStorage.getItem("selectedResult"));
         
         const thisPool = PoolsConst.pools.find(pool=>pool.name==data.pool);
@@ -115,7 +122,7 @@ const Results = ()=>{
                 }
                 {results && pool ?
 
-                <div className="body">
+                <div className="body" id={'questions-bars'}>
                     {sortByValue(results.answers).map((op,i)=>
                         <PoolOption option={op} key={op.name} indx={i} totalVotes={totalQuestionVotes}></PoolOption>    
                     )}
@@ -124,6 +131,9 @@ const Results = ()=>{
                 :""
             }
 
+            {
+
+            results && pool && pool.questions.length > 1 ? 
             <div className="navigator">
                 <div className="arrow" id="prev" onClick={prevQuestion}>
                     Previous
@@ -132,33 +142,42 @@ const Results = ()=>{
                     Next
                 </div>
             </div>
+            :""
+            }
 
             </div>  
 
             <div></div>
 
             <div className="second-column table">
-            {results && pool ?
-            <div className="head">
-                    <div className="hashtaghs">
-                        {
-                            pool.hashtags.map(hash=>
-                                <h3 className="hashtag" key={hash}> #{hash}</h3>
-                            )
-                        }
-                    </div>
+                {results && pool ?
+                <div className="head">
+                        <div className="hashtaghs">
+                            {
+                                pool.hashtags.map(hash=>
+                                    <h3 className="hashtag" key={hash}> #{hash}</h3>
+                                )
+                            }
+                        </div>
 
-                    <h2> {pool.name}</h2>
-                    <div className="meta-data buttoned">
-                        <div className="meta buttoned"><EditIcon/> Modify</div>
-                        <div className="meta buttoned"><DownloadIcon/> Download</div>
+                        <h2> {pool.name}</h2>
+                        <div className="meta-data buttoned">
+                            <div className="meta buttoned"><EditIcon/> Modify</div>
+                            <div className="meta buttoned"><DownloadIcon/> Download</div>
+                        </div>
                     </div>
+                :""
+                }
+
+                {results ?
+
+                <div className="body" id="pie-wrapper">
+                    <PieChart dataInput={results?.answers} totalVotes={totalQuestionVotes}/>
                 </div>
-            :""
-            }
+                :""
+                }
 
             </div>
-
             
         </div>
     )
