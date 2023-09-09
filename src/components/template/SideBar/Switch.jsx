@@ -14,7 +14,7 @@ const Switch = ({showText}) => {
         {
                 showText
                 ?
-                <h4> {theme} mode`</h4>
+                <h4> {theme} mode</h4>
                 :""
             }
     </div>
