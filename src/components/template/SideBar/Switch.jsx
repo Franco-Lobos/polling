@@ -4,15 +4,19 @@ import LightModeIcon from '@mui/icons-material/LightMode'
 import DarkModeIcon from '@mui/icons-material/DarkMode'
 
 
-const Switch = ({icon}) => {
+const Switch = ({showText}) => {
   const {toggleTheme, theme} = useTheme();
 
   return (
     <div onClick={toggleTheme} className="header-icon-wraper"
-    // style={{justifyContent:`flex-${theme == "light" ? 'start':'end'}`}} 
     >
         {theme == "light" ? <LightModeIcon/> : <DarkModeIcon/>}
-        <h4>{theme} mode</h4>
+        {
+                showText
+                ?
+                <h4> {theme} mode`</h4>
+                :""
+            }
     </div>
   );
 };

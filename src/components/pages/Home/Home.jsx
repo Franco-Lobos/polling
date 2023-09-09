@@ -4,7 +4,6 @@ import PoolTable from './PoolTable';
 const Home = ()=>{
 
 
-
     return (
         <div className="page home-columns">
             {

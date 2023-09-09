@@ -116,7 +116,11 @@ const Results = ()=>{
             <div className="first-column table">
                 {results && pool  ?
                 <div className="head">
-                    <h3> Round {results.order} of {pool.questions.length}</h3>
+                    
+                    <h3>
+                        { pool.questions.length > 1 ?`Round ${results.order} of ${pool.questions.length}`: 'Simple Pool'}
+                    </h3>
+                     
                     <h2> {results.question}</h2>
                     <div className="meta-data">
                         <div className="meta"><BackHandIcon/> {totalQuestionVotes}</div>

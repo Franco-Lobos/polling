@@ -24,7 +24,7 @@ const PoolTable = ({pool, indx})=>{
     return (
         <div className="table" key={pool.name} >
         <div className="head">
-            <h3> {pool.questions.length == 1 ? 'Simple question Pool' : pool.questions.length + " Questions Pool"}</h3>
+            <h3> {pool.questions.length == 1 ? 'Simple Pool' : pool.questions.length + " Questions Pool"}</h3>
             <h2>{pool.name}</h2>
             <div className="meta-data">
                 <div className="meta"><BackHandIcon/> {pool.totalVotes} Votes</div>

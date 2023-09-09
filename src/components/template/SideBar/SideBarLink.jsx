@@ -1,9 +1,14 @@
-const SideBarLink = ({Icon, text,  active=0})=>{
+const SideBarLink = ({Icon, text,  active=0, dropSide})=>{
 
     return(
         <div className={`icon-link ${active ? 'active': 'unactive'}`}>
             <Icon/>
-            <h3>{text}</h3>
+            {
+                dropSide
+                ?
+                <h3>{text}</h3>
+                :""
+            }
         </div>
     );
 }

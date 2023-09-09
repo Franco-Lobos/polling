@@ -4,10 +4,17 @@ import { ColorsConst, BreathColors} from "../../constants/ColorsConst";
 const ThemeContext = createContext(undefined);
 
 export const ThemeProvider = ({ children }) => {
+
     const [theme, setTheme] = useState("dark");
     const [lang, setLang] = useState("en");
 
     const [loaded, setLoad] = useState(0);
+
+    const [dropSide, setDropSide] = useState(1);
+
+    const toggleSideBar = ()=>{
+        setDropSide(!dropSide)
+    }
 
     const toggleTheme = ()=>{
         setTheme(theme === "light" ? "dark" : "light");
@@ -51,6 +58,8 @@ export const ThemeProvider = ({ children }) => {
             setLang:setLang,
             loaded,
             setLoad: setLoad,
+            dropSide,
+            toggleSideBar
         }}>
         {children}
         </ThemeContext.Provider>

@@ -90,20 +90,23 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    gap: 0.8vh;
+    gap: 2vh;
     font-size: 0.8em;
-    padding: 1rem;
+    padding: 2rem 1rem;
     animation: spawn 0.8s;
 }
 
 
 #modal-user .option{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap:1rem;
-    padding-left: 0.4rem;
     cursor: pointer;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border-left: var(--border);
 }
 
 #modal-user .option svg{

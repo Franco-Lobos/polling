@@ -11,12 +11,16 @@ import { ScrollToTop } from "../../library";
 import {BrowserRouter, Route, Routes } from 'react-router-dom';
 import Results from "../pages/Results/Results";
 
+import { useTheme } from "../providers/theme/ThemeContext";
 
 const Main = ()=>{
+
+    const {dropSide} = useTheme();
+
     return(
         <BrowserRouter>
             <ScrollToTop/>
-            <div id="main">
+            <div id={`main`} className={`${dropSide ? '' : 'hide' }`}>
                 <SideBar/>
                 <div id="body">
                     <Header/>
