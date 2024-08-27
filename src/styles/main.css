@@ -1,4 +1,4 @@
-#main{
+#main {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
@@ -6,15 +6,16 @@
     grid-template-columns: 2fr 10fr;
 }
 
-#main.hide{
+#main.hide {
     grid-template-columns: 1fr 11fr;
 }
 
-.page{
+.page {
     background-color: var(--primary-background);
     height: 100%;
     padding: 0vw 4vw;
     font-size: 1.1rem;
     max-height: 85vh;
     overflow: scroll;
+    scrollbar-color: var(--pastel-blue) #00000000;
 }
