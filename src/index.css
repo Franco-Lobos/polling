@@ -59,6 +59,7 @@ body {
 @import url(./styles/main.css);
 @import url(./styles/home.css);
 @import url(./styles/results.css);
+@import url(./styles/responsiveness.css);
 
 
 @keyframes spawn{
